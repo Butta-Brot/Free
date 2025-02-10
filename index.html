@@ -11,7 +11,13 @@
         box-sizing: border-box; /* Box-Modell-Anpassung */
         background-color: rgb(43, 42, 42);
         color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: ;
+      }
+      @font-face {
+        font-family: "friday13";
+        src: url(friday13.regular.otf) format(opentype);
+        font-weight: normal;
+        font-style: normal;
       }
 
       .header-image {
@@ -20,15 +26,12 @@
         object-fit: contain;
         display: block;
         margin: 5px auto;
-        
       }
       .Oben {
         display: block;
         margin: 5px auto;
         max-width: 100%;
         height: auto;
-        
-
       }
 
       .memory {
@@ -38,38 +41,57 @@
         height: auto;
         border: 2px solid white;
         margin-bottom: 120px;
-    margin-top: 80px;      }
+        margin-top: 80px;
+      }
       h2 {
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
-        text-shadow: 5px 5px rgba(78, 74, 74, 0.5);
+
         margin-bottom: 70px;
         margin-top: 20px;
+        font-family: "friday13";
       }
 
       h3 {
         font-size: 30px;
-        text-align: ;
-        margin-bottom: 15px; 
+        text-align: center;
+        margin-bottom: 15px;
         margin-top: 40px;
-        margin-left: 100px;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       h4 {
         font-size: 30px;
         text-align: ;
         margin-top: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h5 {
+        font-size: 20px;
+        text-align: ;
+        margin-top: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      .Termine{
+
+      .Termine {
         font-size: 20px;
         text-align: center;
         line-height: 1.6;
-
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       .Beschreibung {
-        padding-left:  120px;
+        padding-left: 120px;
         font-size: 15px;
         line-height: 1.6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      }
+        .Beschreibung2 {
+        padding-left: 120px;
+        font-size: 10px;
+        line-height: 1.6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        
       }
       @media (max-width: 700px) {
         .Beschreibung {
@@ -86,8 +108,8 @@
           font-size: 20px;
         }
         .header-image {
-            width: 100%;
-            height: auto;
+          width: 100%;
+          height: auto;
         }
         .Termine {
           font-size: 18px;
@@ -96,45 +118,59 @@
     </style>
   </head>
   <body>
-    <img class="Oben" src="/HEad.jpg" alt="">
+    <div class="alles">
+    </div class="container">
+    <img class="Oben" src="/HEad.jpg" alt="" />
     <img class="header-image" src="/startbildfreerider.jpg" alt="" />
-    <h2> <p></p> MC Free RIDER</h2>
-    <h3>TERMINE</h3>
-    <div class="Beschreibung">
-      <u>17.04.25: </u>
-      <p>
-        Gründonnerstag Clubhausparty
-        
+  </div>
 
-      </p>
-      <p></p>
+      <h2>
+        <p></p>
+        MC Free RIDER
+      </h2>
 
-      <u>09.08.25:</u>
-      <p></p>
-      30. Bildersuchfahrt mit Party am Clubhaus 
-<p><u>25.10.25:</u></p>
-Rocknacht Möggingen
+      <h3>Termine</h3>
+      <div class="Termine">
+        <u>17.04.25: </u>
+        <p>Gründonnerstag Clubhausparty</p>
+        <p></p>
+
+        <u>09.08.25:</u>
+        <p></p>
+        30. Bildersuchfahrt mit Party am Clubhaus
+        <p><u>25.10.25:</u></p>
+        Rocknacht Möggingen
+      </div>
+
+      <h3>CLUBADRESSE</h3>
+      <div class="Termine">
+        MC Free RIDER Möggingen e.V.
+        <p></p>
+        Liggeringerstr. 21
+        <p></p>
+        78315 Radolfzell
+        <p></p>
+        Tel.: 07732/14143 (Donn. ab 20Uhr)
+        <p>ACHTUNG: Kein öffentliches Clubhaus!</p>
+      </div>
+      <h3>KONTAKT</h3>
+      <div class="Termine">1.Vorstand:Manuel@mcfreerider.de</div>
+
+      <img class="memory" src="/memory Gerdi.jpg" alt="" />
+
+    
+
+
+
 
     </div>
 
-    <h3>CLUBADRESSE</h3>
-    <div class="Beschreibung">
-      MC Free RIDER Möggingen e.V. Liggeringerstr. 21 <p></p>78315 Radolfzell
-      <p></p>
-      Tel.: 07732/14143 (Donn. ab 20Uhr)
-      <p>ACHTUNG: Kein öffentliches Clubhaus!</p>
-    </div>
-    <h3>KONTAKT</h3>
-    <div class="Beschreibung">
-      1.Vorstand:Manuel@mcfreerider.de
-    </div>
 
-    <img class="memory" src="/memory Gerdi.jpg" alt="" />
 
     <h3>IMPRESSUM</h3>
 
-    <div class="Beschreibung">
-      <h4>Verantwortlich:</h4>
+    <div class="Beschreibung2">
+      <h5>Verantwortlich:</h5>
       <p></p>
 
       MC Free Rider Möggingen e.V.
@@ -144,10 +180,10 @@ Rocknacht Möggingen
       78315 Radolfzell
       <p></p>
 
-      <h4>Kontakt:</h4>
+      <h5>Kontakt:</h5>
       E-Mail: mail@mcfreerider.de
       <p></p>
-      <h4>Disclaimer:</h4>
+      <h5>Disclaimer</h5>
 
       Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
       Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch
@@ -163,7 +199,7 @@ Rocknacht Möggingen
       von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
       entfernen.
       <p></p>
-      <h4>Haftung für Links</h4>
+      <h5>Haftung für Links</h5>
 
       Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
       Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden
@@ -175,7 +211,7 @@ Rocknacht Möggingen
       Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte
       einer Rechtsverletzung nicht zumutbar. Bei bekannt werden von
       Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-      <h4>Uhreheberrecht</h4>
+      <h5>Urheberrecht</h5>
 
       Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
       Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
@@ -189,7 +225,7 @@ Rocknacht Möggingen
       aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
       Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend
       entfernen.
-      <h4>Datenschutz</h4>
+      <h5>Datenschutz</h5>
 
       Die Nutzung unserer Webseite ist in der Regel ohne Angabe
       personenbezogener Daten möglich. Soweit auf unseren Seiten
